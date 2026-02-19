@@ -3,7 +3,7 @@
 Este é meu portfólio profissional, onde apresento meus projetos, habilidades e trajetória na área de Tecnologia da Informação, com foco em desenvolvimento web e front-end.
 
 🔗 **Acesse o site:**  
-https://matheus-cmc.github.io/portfolio
+https://bem-vindo-ao-meu-portfolio.vercel.app/
 
 ---
 
