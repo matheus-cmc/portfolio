@@ -3,157 +3,370 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Matheus Carvalho</title>
+  <title>Matheus Carvalho | Portfólio Profissional</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    body { font-family: 'Poppins', sans-serif; }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .glass-card {
+      background: rgba(31, 41, 55, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .hover-glow {
+      transition: all 0.3s ease;
+    }
+    .hover-glow:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(59, 130, 246, 0.3);
+    }
+    .skill-tag {
+      transition: all 0.2s ease;
+    }
+    .skill-tag:hover {
+      transform: translateY(-2px);
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+    .hero-gradient {
+      background: radial-gradient(circle at 70% 30%, rgba(37, 99, 235, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #1f2937;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #3b82f6;
+      border-radius: 10px;
+    }
   </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100">
+<body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-gray-100 custom-scrollbar">
 
-  <!-- Header / Hero -->
-<header class="bg-gray-900/80 backdrop-blur shadow-lg">
-  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-    <!-- Texto -->
-    <div>
-      <h1 class="text-4xl md:text-5xl font-bold text-white">Matheus Carvalho</h1>
-      <p class="mt-4 text-xl text-gray-300">Desenvolvedor de Sistemas • Front-end</p>
-      <p class="mt-4 text-gray-400 leading-relaxed">
-        Estudante de Tecnologia pelo SENAI-BA, focado em desenvolvimento web moderno,
-        com paixão por aprendizado contínuo, inovação e criação de soluções digitais.
-      </p>
-      <div class="mt-6 flex flex-wrap gap-4">
-        <a href="mailto:matheusfeira@hotmail.com" class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition">Email</a>
-        <a href="https://github.com/matheus-cmc" target="_blank" class="px-5 py-3 rounded-xl bg-gray-700 hover:bg-gray-600 transition">GitHub</a>
-        <a href="https://www.linkedin.com/in/matheus-carvalho-a79636322" target="_blank" class="px-5 py-3 rounded-xl bg-gray-700 hover:bg-gray-600 transition">LinkedIn</a>
-      </div>
-    </div>
-
-    <!-- Foto -->
-    <div class="flex justify-center md:justify-end">
-      <img src="foto-matheus.png" alt="Foto de Matheus Carvalho"
-           class="w-64 h-64 object-cover rounded-full shadow-xl border-4 border-gray-700" />
-    </div>
-
+  <!-- Animated Background Elements -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-1000"></div>
   </div>
-</header>
 
-  <!-- Main -->
-  <main class="max-w-6xl mx-auto px-6 py-16 space-y-20">
-
-    <!-- Sobre -->
-    <section>
-      <h2 class="text-3xl font-semibold mb-6">👋 Sobre mim</h2>
-      <div class="bg-gray-800/80 backdrop-blur p-8 rounded-2xl shadow-lg">
-        <p class="text-gray-300 leading-relaxed">
-          Sou estudante do curso Técnico em Desenvolvimento de Sistemas pelo SENAI-BA (4º semestre),
-          com foco em desenvolvimento web e front-end. Tenho experiência prática com HTML, CSS,
-          JavaScript e lógica de programação, além de forte interesse em tecnologia, inovação e aprendizado contínuo.
-        </p>
-        <p class="text-gray-300 mt-4 leading-relaxed">
-          Possuo formação anterior em Nutrição, o que contribuiu para meu desenvolvimento em organização,
-          responsabilidade e trabalho em equipe — habilidades que aplico hoje na área de TI.
-        </p>
-      </div>
-    </section>
-
-    <!-- Objetivo -->
-    <section>
-      <h2 class="text-3xl font-semibold mb-6">🎯 Objetivo Profissional</h2>
-      <div class="bg-gray-800/80 backdrop-blur p-8 rounded-2xl shadow-lg">
-        <p class="text-gray-300 leading-relaxed">
-          Atuar como estagiário ou desenvolvedor júnior na área de Tecnologia da Informação,
-          com foco em desenvolvimento de sistemas e front-end, aplicando meus conhecimentos
-          e evoluindo profissionalmente em ambientes desafiadores.
-        </p>
-      </div>
-    </section>
-
-    <!-- Habilidades -->
-    <section>
-      <h2 class="text-3xl font-semibold mb-8">🧠 Habilidades Técnicas</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">HTML, CSS, JavaScript</div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">Python (básico)</div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">Lógica de Programação</div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">Programação Orientada a Objetos</div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">Git e GitHub</div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">Suporte em Informática</div>
-      </div>
-    </section>
-
-    <!-- Formação -->
-    <section>
-      <h2 class="text-3xl font-semibold mb-8">🎓 Formação</h2>
-      <div class="space-y-6">
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
-          <h3 class="font-semibold text-lg">Técnico em Desenvolvimento de Sistemas</h3>
-          <p class="text-gray-400">SENAI – Feira de Santana/BA (Em andamento – 2026)</p>
+  <!-- Header / Hero Section -->
+  <header class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-20 lg:py-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2 bg-blue-600/20 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-500/30">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            <span class="text-sm font-medium text-blue-300">Disponível para estágio / Júnior</span>
+          </div>
+          
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight">
+            Matheus 
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Carvalho</span>
+          </h1>
+          
+          <p class="text-xl md:text-2xl font-semibold text-gray-300">Desenvolvedor de Sistemas • Front-end</p>
+          
+          <p class="text-gray-400 leading-relaxed max-w-lg">
+            Estudante de Tecnologia pelo SENAI-BA, focado em desenvolvimento web moderno,
+            com paixão por aprendizado contínuo, inovação e criação de soluções digitais.
+          </p>
+          
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="mailto:matheusfeira@hotmail.com" class="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 transition-all duration-300 shadow-lg shadow-blue-600/20 hover:shadow-blue-600/40">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://github.com/matheus-cmc" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gray-800/80 backdrop-blur-sm border border-gray-700 hover:bg-gray-700 hover:border-gray-600 transition-all duration-300">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-carvalho-a79636322" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gray-800/80 backdrop-blur-sm border border-gray-700 hover:bg-gray-700 hover:border-gray-600 transition-all duration-300">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
-          <h3 class="font-semibold text-lg">Bacharelado em Nutrição</h3>
-          <p class="text-gray-400">Faculdade Anísio Teixeira – Concluído em 06/2022</p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
-          <h3 class="font-semibold text-lg">Inteligência Artificial Industrial</h3>
-          <p class="text-gray-400">SENAI-SP – Concluído em 12/2025</p>
+
+        <!-- Right Photo -->
+        <div class="flex justify-center lg:justify-end relative">
+          <div class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-full blur-2xl opacity-20 scale-110"></div>
+          <div class="relative">
+            <div class="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden ring-4 ring-blue-500/30 shadow-2xl">
+              <img src="foto-matheus.png" alt="Matheus Carvalho" class="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-6 py-16 space-y-24">
+
+    <!-- Sobre Mim + Objetivo integrados -->
+    <section>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Sobre -->
+        <div class="glass-card rounded-2xl p-8 hover-glow">
+          <div class="flex items-center gap-3 mb-6">
+            <i class="fas fa-user-astronaut text-3xl text-blue-400"></i>
+            <h2 class="text-2xl font-bold">Sobre mim</h2>
+          </div>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Sou estudante do curso Técnico em Desenvolvimento de Sistemas pelo SENAI-BA (4º semestre),
+            com foco em desenvolvimento web e front-end. Tenho experiência prática com HTML, CSS,
+            JavaScript e lógica de programação, além de forte interesse em tecnologia, inovação e aprendizado contínuo.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Possuo formação anterior em Nutrição, o que contribuiu para meu desenvolvimento em organização,
+            responsabilidade e trabalho em equipe — habilidades que aplico hoje na área de TI.
+          </p>
+        </div>
+
+        <!-- Objetivo -->
+        <div class="glass-card rounded-2xl p-8 hover-glow">
+          <div class="flex items-center gap-3 mb-6">
+            <i class="fas fa-bullseye text-3xl text-purple-400"></i>
+            <h2 class="text-2xl font-bold">Objetivo Profissional</h2>
+          </div>
+          <p class="text-gray-300 leading-relaxed">
+            Atuar como estagiário ou desenvolvedor júnior na área de Tecnologia da Informação,
+            com foco em desenvolvimento de sistemas e front-end, aplicando meus conhecimentos
+            e evoluindo profissionalmente em ambientes desafiadores.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Cursos -->
+    <!-- Habilidades Técnicas -->
     <section>
-      <h2 class="text-3xl font-semibold mb-8">📚 Cursos Complementares</h2>
-      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-gray-300">
-        <li class="bg-gray-800 p-5 rounded-xl shadow-lg hover:scale-105 transition">Python Essentials – Cisco</li>
-        <li class="bg-gray-800 p-5 rounded-xl shadow-lg hover:scale-105 transition">Get Connected – Cisco</li>
-        <li class="bg-gray-800 p-5 rounded-xl shadow-lg hover:scale-105 transition">Defesa de Segurança – SENAI</li>
-        <li class="bg-gray-800 p-5 rounded-xl shadow-lg hover:scale-105 transition">POO – Fundação Bradesco</li>
-        <li class="bg-gray-800 p-5 rounded-xl shadow-lg hover:scale-105 transition">IA Industrial – SENAI-SP</li>
-        <li class="bg-gray-800 p-5 rounded-xl shadow-lg hover:scale-105 transition">GenAI & Dados – Bradesco</li>
-      </ul>
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">🧠 Competências Técnicas</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="skill-tag bg-gray-800/70 backdrop-blur-sm border border-gray-700 rounded-xl p-4 text-center font-medium hover-glow cursor-default">
+          <i class="fab fa-html5 text-2xl text-orange-500 mb-2 block"></i>
+          HTML/CSS/JS
+        </div>
+        <div class="skill-tag bg-gray-800/70 backdrop-blur-sm border border-gray-700 rounded-xl p-4 text-center font-medium hover-glow cursor-default">
+          <i class="fab fa-python text-2xl text-blue-400 mb-2 block"></i>
+          Python (básico)
+        </div>
+        <div class="skill-tag bg-gray-800/70 backdrop-blur-sm border border-gray-700 rounded-xl p-4 text-center font-medium hover-glow cursor-default">
+          <i class="fas fa-brain text-2xl text-green-400 mb-2 block"></i>
+          Lógica POO
+        </div>
+        <div class="skill-tag bg-gray-800/70 backdrop-blur-sm border border-gray-700 rounded-xl p-4 text-center font-medium hover-glow cursor-default">
+          <i class="fab fa-git-alt text-2xl text-red-400 mb-2 block"></i>
+          Git/GitHub
+        </div>
+        <div class="skill-tag bg-gray-800/70 backdrop-blur-sm border border-gray-700 rounded-xl p-4 text-center font-medium hover-glow cursor-default">
+          <i class="fas fa-mobile-alt text-2xl text-indigo-400 mb-2 block"></i>
+          Flutter (básico)
+        </div>
+        <div class="skill-tag bg-gray-800/70 backdrop-blur-sm border border-gray-700 rounded-xl p-4 text-center font-medium hover-glow cursor-default">
+          <i class="fas fa-database text-2xl text-yellow-500 mb-2 block"></i>
+          Firebase
+        </div>
+      </div>
     </section>
 
-    <!-- Projetos -->
+    <!-- Formação e Cursos integrados em grid elegante -->
     <section>
-      <h2 class="text-3xl font-semibold mb-8">🚀 Projetos</h2>
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">🎓 Formação & Certificações</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-gray-800 p-7 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <h3 class="font-semibold text-xl mb-3">Quiz de Futebol (Flutter)</h3>
-          <p class="text-gray-300 mb-4">Aplicativo educacional com telas de início, perguntas e resultados, usando Firebase.</p>
-          <a href="https://github.com/matheus-cmc" target="_blank" class="text-blue-400 hover:underline">Ver no GitHub →</a>
+        <!-- Formação Acadêmica -->
+        <div class="space-y-5">
+          <div class="glass-card rounded-2xl p-6 hover-glow">
+            <div class="flex items-start gap-4">
+              <i class="fas fa-laptop-code text-3xl text-blue-400"></i>
+              <div>
+                <h3 class="text-xl font-semibold">Técnico em Desenvolvimento de Sistemas</h3>
+                <p class="text-gray-400 text-sm mt-1">SENAI – Feira de Santana/BA • 2026 (Em andamento)</p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card rounded-2xl p-6 hover-glow">
+            <div class="flex items-start gap-4">
+              <i class="fas fa-utensils text-3xl text-emerald-400"></i>
+              <div>
+                <h3 class="text-xl font-semibold">Graduação em Nutrição</h3>
+                <p class="text-gray-400 text-sm mt-1">Faculdade Anísio Teixeira • Concluído em 06/2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card rounded-2xl p-6 hover-glow">
+            <div class="flex items-start gap-4">
+              <i class="fas fa-microchip text-3xl text-purple-400"></i>
+              <div>
+                <h3 class="text-xl font-semibold">Inteligência Artificial Industrial</h3>
+                <p class="text-gray-400 text-sm mt-1">SENAI-SP • Concluído em 12/2025</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-800 p-7 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <h3 class="font-semibold text-xl mb-3">App de Financiamento para Autônomos e MEIs</h3>
-          <p class="text-gray-300 mb-4">Projeto com CRUD, menu lateral e persistência no Firestore.</p>
-          <a href="https://github.com/matheus-cmc" target="_blank" class="text-blue-400 hover:underline">Ver no GitHub →</a>
-        </div>
-        <div class="bg-gray-800 p-7 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <h3 class="font-semibold text-xl mb-3">Projetos em C e Python</h3>
-          <p class="text-gray-300 mb-4">Exercícios práticos de lógica, estruturas de dados e algoritmos.</p>
-          <a href="https://github.com/matheus-cmc" target="_blank" class="text-blue-400 hover:underline">Ver no GitHub →</a>
+
+        <!-- Cursos Complementares -->
+        <div class="glass-card rounded-2xl p-6">
+          <div class="flex items-center gap-3 mb-5">
+            <i class="fas fa-certificate text-2xl text-yellow-500"></i>
+            <h3 class="text-xl font-bold">Cursos Complementares</h3>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="flex items-center gap-2 text-gray-300 p-2 rounded-lg hover:bg-gray-700/50 transition">
+              <i class="fas fa-check-circle text-blue-400 text-sm"></i>
+              <span>Python Essentials – Cisco</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300 p-2 rounded-lg hover:bg-gray-700/50 transition">
+              <i class="fas fa-check-circle text-blue-400 text-sm"></i>
+              <span>Get Connected – Cisco</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300 p-2 rounded-lg hover:bg-gray-700/50 transition">
+              <i class="fas fa-check-circle text-blue-400 text-sm"></i>
+              <span>Defesa de Segurança – SENAI</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300 p-2 rounded-lg hover:bg-gray-700/50 transition">
+              <i class="fas fa-check-circle text-blue-400 text-sm"></i>
+              <span>POO – Fundação Bradesco</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300 p-2 rounded-lg hover:bg-gray-700/50 transition">
+              <i class="fas fa-check-circle text-blue-400 text-sm"></i>
+              <span>IA Industrial – SENAI-SP</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300 p-2 rounded-lg hover:bg-gray-700/50 transition">
+              <i class="fas fa-check-circle text-blue-400 text-sm"></i>
+              <span>GenAI & Dados – Bradesco</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contato -->
+    <!-- Projetos em Destaque -->
     <section>
-      <h2 class="text-3xl font-semibold mb-8">📬 Contato</h2>
-      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg space-y-3 text-gray-300">
-        <p><strong>Email:</strong> matheusfeira@hotmail.com</p>
-        <p><strong>WhatsApp:</strong> 75 98329-7958</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/matheus-carvalho-a79636322" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/matheus-carvalho-a79636322</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/matheus-cmc" target="_blank" class="text-blue-400 hover:underline">github.com/matheus-cmc</a></p>
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">🚀 Projetos em Destaque</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+        <p class="text-gray-400 mt-4">Soluções desenvolvidas com dedicação e tecnologia</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Projeto 1 -->
+        <div class="group glass-card rounded-2xl overflow-hidden hover-glow cursor-pointer">
+          <div class="h-40 bg-gradient-to-br from-blue-600/20 to-purple-600/20 flex items-center justify-center">
+            <i class="fas fa-futbol text-6xl text-blue-400/70 group-hover:scale-110 transition-transform duration-300"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Quiz de Futebol (Flutter)</h3>
+            <p class="text-gray-400 text-sm mb-4">Aplicativo educacional com telas de início, perguntas e resultados, usando Firebase.</p>
+            <a href="https://github.com/matheus-cmc" target="_blank" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition">
+              <span>Ver no GitHub</span>
+              <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="group glass-card rounded-2xl overflow-hidden hover-glow cursor-pointer">
+          <div class="h-40 bg-gradient-to-br from-emerald-600/20 to-teal-600/20 flex items-center justify-center">
+            <i class="fas fa-chart-line text-6xl text-emerald-400/70 group-hover:scale-110 transition-transform duration-300"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Financiamento para MEIs</h3>
+            <p class="text-gray-400 text-sm mb-4">CRUD completo, menu lateral e persistência no Firestore para autônomos e MEIs.</p>
+            <a href="https://github.com/matheus-cmc" target="_blank" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition">
+              <span>Ver no GitHub</span>
+              <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="group glass-card rounded-2xl overflow-hidden hover-glow cursor-pointer">
+          <div class="h-40 bg-gradient-to-br from-orange-600/20 to-red-600/20 flex items-center justify-center">
+            <i class="fas fa-code text-6xl text-orange-400/70 group-hover:scale-110 transition-transform duration-300"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">C, Python & Algoritmos</h3>
+            <p class="text-gray-400 text-sm mb-4">Exercícios práticos de lógica, estruturas de dados e algoritmos.</p>
+            <a href="https://github.com/matheus-cmc" target="_blank" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition">
+              <span>Ver no GitHub</span>
+              <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato com design aprimorado -->
+    <section>
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="p-8 lg:p-10 bg-gradient-to-br from-blue-600/10 to-purple-600/10">
+            <h2 class="text-3xl font-bold mb-4">📬 Vamos conversar?</h2>
+            <p class="text-gray-300 mb-6">Estou aberto a novas oportunidades, parcerias e desafios. Entre em contato e vamos construir algo incrível juntos.</p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <i class="fas fa-envelope text-blue-400 text-xl w-6"></i>
+                <span class="text-gray-200">matheusfeira@hotmail.com</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="fab fa-whatsapp text-green-400 text-xl w-6"></i>
+                <span class="text-gray-200">(75) 98329-7958</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="fab fa-linkedin text-blue-400 text-xl w-6"></i>
+                <a href="https://www.linkedin.com/in/matheus-carvalho-a79636322" target="_blank" class="text-gray-200 hover:text-blue-300 transition">linkedin.com/in/matheus-carvalho</a>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="fab fa-github text-gray-300 text-xl w-6"></i>
+                <a href="https://github.com/matheus-cmc" target="_blank" class="text-gray-200 hover:text-blue-300 transition">github.com/matheus-cmc</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 lg:p-10 flex flex-col justify-center bg-gray-800/30">
+            <h3 class="text-2xl font-semibold mb-4">📍 Localização</h3>
+            <p class="text-gray-300 mb-2"><i class="fas fa-map-marker-alt text-red-400 mr-2"></i> Feira de Santana, Bahia - Brasil</p>
+            <p class="text-gray-400 text-sm mt-4">Disponível para trabalho remoto e oportunidades presenciais na região.</p>
+            <div class="mt-6 flex gap-3">
+              <a href="mailto:matheusfeira@hotmail.com" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 transition">
+                <i class="fas fa-paper-plane"></i> Enviar mensagem
+              </a>
+              <a href="https://github.com/matheus-cmc" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gray-700 hover:bg-gray-600 transition">
+                <i class="fab fa-github"></i> Portfólio
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-center py-6 text-gray-500">
-    <p>© 2026 – Matheus Carvalho. Todos os direitos reservados.</p>
+  <footer class="border-t border-gray-800 mt-20 py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-gray-500 text-sm">© 2026 Matheus Carvalho. Desenvolvido com <i class="fas fa-heart text-red-500"></i> e tecnologia de ponta.</p>
+      <div class="flex justify-center gap-4 mt-4">
+        <a href="#" class="text-gray-500 hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-gray-500 hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-gray-500 hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </footer>
 
 </body>
